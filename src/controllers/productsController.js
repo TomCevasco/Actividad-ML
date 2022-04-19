@@ -47,9 +47,9 @@ const controller = {
 	// // Update - Form to edit
 	 edit: (req, res) => {
 
-		let productId = req.query.productId
+		let productId = req.params.productId
 	let productToEdit = products.filter((p) => p.id == productId )
-	
+	console.log();
 		res.render("product-edit-form", {productToEdit})
 	},
 	// // Update - Method to update
